@@ -1,0 +1,46 @@
+dept_name,title,total_employee_count,total_retiring_count,total_mentoring_count
+Customer Service,Assistant Engineer,108,34,
+Customer Service,Engineer,944,296,3
+Customer Service,Manager,1,,
+Customer Service,Senior Engineer,2027,611,12
+Customer Service,Senior Staff,12694,3871,79
+Customer Service,Staff,5729,1687,23
+Customer Service,Technique Leader,309,77,3
+Development,Assistant Engineer,2704,815,11
+Development,Engineer,21436,6425,99
+Development,Manager,1,,
+Development,Senior Engineer,44166,13197,244
+Development,Senior Staff,1247,376,9
+Development,Staff,525,194,2
+Development,Technique Leader,6882,2003,31
+Finance,Manager,1,,
+Finance,Senior Staff,10871,3301,52
+Finance,Staff,4706,1411,12
+Human Resources,Manager,1,,
+Human Resources,Senior Staff,11107,3398,78
+Human Resources,Staff,4964,1523,19
+Marketing,Manager,1,,
+Marketing,Senior Staff,12733,3814,96
+Marketing,Staff,5692,1682,21
+Production,Assistant Engineer,2234,675,17
+Production,Engineer,18497,5540,59
+Production,Manager,1,,
+Production,Senior Engineer,38174,11549,207
+Production,Senior Staff,1270,437,6
+Production,Staff,565,154,1
+Production,Technique Leader,5933,1808,32
+Quality Management,Assistant Engineer,662,205,1
+Quality Management,Engineer,5182,1586,23
+Quality Management,Manager,1,,
+Quality Management,Senior Engineer,10811,3299,53
+Quality Management,Technique Leader,1638,502,9
+Research,Assistant Engineer,127,32,
+Research,Engineer,1244,374,6
+Research,Manager,1,1,
+Research,Senior Engineer,2569,759,13
+Research,Senior Staff,10346,3216,62
+Research,Staff,4604,1351,20
+Research,Technique Leader,393,112,2
+Sales,Manager,1,1,
+Sales,Senior Staff,32578,9842,187
+Sales,Staff,14344,4240,57
