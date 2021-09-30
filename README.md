@@ -25,7 +25,7 @@ Then, we imported the tables into an *SQL* database using *pgAdmin* and *Postgre
 
 ### Number of Retiring Employees by Title
 
-The first table that Pewlett Hackard requested was a summary of the total retiring employee count by title. The resulting query produced the following table:
+The first table that Pewlett Hackard requested was a summary of the total retiring employee count by title. Retiring employees are those employees born between January 1st, 1952 and December 31st, 1955. The resulting query produced the following table:
 
 ![Number of Retiring Employees by Title](Resources/Retiring_Employee_Titles.png)
 
@@ -33,7 +33,7 @@ This data was saved to a new csv file stored as *retiring_titles.csv* in the *Da
 
 ### Employees Eligible for Mentorship Program
 
-The second table requested by Pewlett Hackard was a list of all retiring employees that were eligible for the mentorship program. Eligibility was limited to those retiring employees born in 1965. A suggested query methodology was provided.
+The second table requested by Pewlett Hackard was a list of employees that were eligible for the mentorship program. Eligibility was limited to those employees born between January 1st and December 31st, 1965. A suggested query methodology was provided.
 
 In performing the suggested methodology for extracting the required data, we noticed that it was not querying the most current title for some employees. 
 
@@ -59,7 +59,7 @@ Four major points can be derived from the above analysis:
 
 * About a third (90,398 of a total employee count of 300,024) of Pewlett Hackard employees would retire under the program.
 * Retiring employees as a percentage of each department is evenly spread out, with retiring employees representing roughly 30% of each department's total head count.
-* Only 1,549 employees would be eligible for the mentorship program, which represents barely 0.5% of the total employee count and 1.7% of the retiring employee count.
+* Only 1,549 employees would be eligible for the mentorship program, which represents barely 0.5% of the total employee count and less than 1% (0.7%) of the non-retiring employee count.
 * Development and Production departments together represent nearly half of the retiring employee count (43,173 out of 90,398)
 
 ## Summary
@@ -88,8 +88,8 @@ To answer the second question, we combined the three summary tables using a *LEF
 
 ![Summary Pivot Table](Resources/Summary_Pivot_Table.png)
 
-The resulting pivot table shown above highlights several challenges with the mentorship program. Although in most cases, there seem to be enough mentors to train the new generation of employees, there are cases where there are too few (for example, in the roles of Assistant Engineer in the Quality Management department and Technique Leader in the Customer Service department), or there are none (in the case of Manager roles for several departments). 
+The resulting pivot table shown above highlights several challenges with the mentorship program. Although in most cases, there seem to be enough mentors to train the new generation of employees, there are cases where there are too few (for example, in the roles of Assistant Engineer in the Quality Management department and Staff in the Production department). In a few cases, there are no mentors for the retiring roles (for example, Manager in the Research department). 
 
-Of particular concern, there seems to be few, if any, mentors in critical departments such as Research, where there are no mentors for the single retiring manager, and no mentors for the 32 of 127 retiring Assistant Engineers. A similar situation occurs with Quality Management and Production departments.
+Of particular concern, there seems to be few, if any, mentors in critical departments such as Research, where there are no mentors for the single retiring manager, and no mentors to train the 127 positions of Assistant Engineers, 32 of which would be retiring. The mentoring program would also be stretched thin for technical roles in other key departments such as Quality Management and Production.
 
 We would recommend that Pewlett Hackard broaden the reach of the mentorship program to cover these important and critical gaps.
